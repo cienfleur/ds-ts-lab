@@ -55,9 +55,9 @@ function sortColleagues(
   return fullResult.slice(0,end)
 }
 // Test invocations
-console.log(sortColleagues(colleagues.current, (a, b) => (a.contact.extension - b.contact.extension),3));
-console.log(sortColleagues(colleagues.current, (a, b) => (a.name.length - b.name.length),1));
-console.log(sortColleagues(colleagues.current, (a, b) => (a.name.length - b.name.length)));
+//console.log(sortColleagues(colleagues.current, (a, b) => (a.contact.extension - b.contact.extension),3));
+//console.log(sortColleagues(colleagues.current, (a, b) => (a.name.length - b.name.length),1));
+//console.log(sortColleagues(colleagues.current, (a, b) => (a.name.length - b.name.length)));
 
 
 
@@ -72,3 +72,14 @@ function findFriends(
 
 // console.log(findFriends(friends, (friend) => friend.name.startsWith('Mi')));
 // console.log(findFriends(friends, (friend) => friend.age < 35));
+
+function addInterest(f: Friend, interest: string): string[] {
+    if (f.interests === undefined) {
+        f.interests = [];
+    }
+    f.interests.push(interest);
+    return f.interests;
+}
+
+console.log(addInterest(friends[0], 'golfing'));
+console.log(addInterest(friends[1], 'running'));
