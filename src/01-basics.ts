@@ -4,12 +4,14 @@ const friend1: Friend = {
   name: "Michael Jordan",
   phone: "087-12345",
   age: 25,
+  dob: new Date(1998-2-17),
 };
 
 const friend2: Friend = {
   name: "Kevin Durant",
   phone: "086--12345",
   age: 31,
+  interests: ["basketball", "cooking"]
 };
 
 export const friends: Friend[] = [friend1, friend2];
