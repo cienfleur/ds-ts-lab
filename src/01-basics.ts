@@ -46,9 +46,17 @@ const colleague3: Colleague = {
   },
 };
 
+const colleague4: Colleague = {
+  name: "Kevin Durant",
+  department: "HR",
+  contact: {
+    email: "kdurant@company.com",
+    extension: 122,
+  },
+};
 
 export const colleagues : ColleagueHistory = {
-  current: [colleague1, colleague2, colleague3],
+  current: [colleague1, colleague2, colleague3, colleague4],
   former: [],
 };
 
